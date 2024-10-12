@@ -12,7 +12,7 @@ export interface Lesson {
 
 export interface Module {
     title : string;
-    lessons : Lesson[]
+    lessons : Lesson[];
 }
 
 export interface Course {

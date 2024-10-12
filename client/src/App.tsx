@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Components/Home/Home';
 import CourseDetail from './Components/Details/Course';
 import { CoursesProvider } from './Store/storeData';
+import LessonsDetail from './Components/Details/Lesson';
+import './App.css'
 
 const App: React.FC = () => {
   return (
@@ -12,7 +14,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/course/:id" element={<CourseDetail />} /> 
-            <Route path="/course/:id/modules/:title" element={<CourseDetail />} /> 
+            <Route path="/course/:id/modules/:moduleIndex/lesson/:lessonIndex" element={<LessonsDetail />} /> 
           </Routes>
         </div>
       </BrowserRouter>

@@ -25,6 +25,7 @@ export const CoursesProvider: React.FC<CoursesProviderProps> = ({ children }) =>
         try {
             const response = await axios.get('/data.json');
             setCourses(response.data);
+            console.log(response.data)
         } catch (error) {
             console.error("Error al obtener los cursos:", error);
         }
@@ -32,7 +33,7 @@ export const CoursesProvider: React.FC<CoursesProviderProps> = ({ children }) =>
 
     useEffect(() => {
         getCourses();
-    }, []); // Se ejecuta solo una vez al cargar el componente
+    }, []);
 
     return (
         <CoursesContext.Provider value={courses}>

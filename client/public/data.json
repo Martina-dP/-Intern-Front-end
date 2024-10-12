@@ -203,5 +203,114 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 6,
+        "title": "Full-Stack Web Development with Node.js",
+        "description": "Learn to build scalable web applications with Node.js, Express, and MongoDB.",
+        "modules": [
+            {
+                "title": "Node.js Basics",
+                "lessons": [
+                    {
+                        "title": "Introduction to Node.js",
+                        "description": "Understand what Node.js is and how it works for server-side development.",
+                        "topics": ["Node.js runtime", "Modules", "Asynchronous programming"],
+                        "content": [
+                            {
+                                "type": "text",
+                                "data": "Node.js allows JavaScript to be run on the server, enabling full-stack JavaScript development."
+                            },
+                            {
+                                "type": "video",
+                                "data": "https://example.com/nodejs-introduction-video"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Building APIs with Express",
+                        "description": "Learn how to create RESTful APIs using the Express framework.",
+                        "topics": ["Express Router", "Middleware", "API Endpoints"],
+                        "content": [
+                            {
+                                "type": "text",
+                                "data": "Express is a web framework for Node.js that simplifies building APIs and handling HTTP requests."
+                            },
+                            {
+                                "type": "video",
+                                "data": "https://example.com/express-api-video"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Databases with MongoDB",
+                "lessons": [
+                    {
+                        "title": "Connecting to MongoDB",
+                        "description": "Learn how to integrate MongoDB as a database for your web application.",
+                        "topics": ["MongoDB Atlas", "CRUD operations", "Mongoose"],
+                        "content": [
+                            {
+                                "type": "text",
+                                "data": "MongoDB is a NoSQL database that stores data in JSON-like documents, making it easy to use with JavaScript."
+                            },
+                            {
+                                "type": "interactive",
+                                "data": "https://example.com/mongodb-connection-interactive"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "DevOps and Continuous Integration",
+        "description": "Master the DevOps principles and learn how to implement continuous integration and deployment.",
+        "modules": [
+            {
+                "title": "Introduction to DevOps",
+                "lessons": [
+                    {
+                        "title": "What is DevOps?",
+                        "description": "Learn the core principles and benefits of DevOps in modern software development.",
+                        "topics": ["DevOps culture", "Collaboration", "Automation"],
+                        "content": [
+                            {
+                                "type": "text",
+                                "data": "DevOps is a set of practices that integrates software development and IT operations, aiming to shorten the development lifecycle."
+                            },
+                            {
+                                "type": "video",
+                                "data": "https://example.com/devops-introduction-video"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Continuous Integration with Jenkins",
+                "lessons": [
+                    {
+                        "title": "Setting Up Jenkins",
+                        "description": "Learn how to configure Jenkins for continuous integration.",
+                        "topics": ["Jenkins pipelines", "Automated testing", "Build triggers"],
+                        "content": [
+                            {
+                                "type": "text",
+                                "data": "Jenkins is a powerful tool for automating software builds and testing, ensuring code quality in the development process."
+                            },
+                            {
+                                "type": "video",
+                                "data": "https://example.com/jenkins-setup-video"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

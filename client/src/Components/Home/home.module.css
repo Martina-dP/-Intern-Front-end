@@ -1,0 +1,31 @@
+.container {
+    background-color: bisque;
+    min-height: 100vh;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.body {
+    background-color: burlywood;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.link {
+    flex: 0 1 calc(50% - 10px); 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+}
+
+.opcions {
+    margin: 1em;
+}
