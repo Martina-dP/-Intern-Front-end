@@ -21,3 +21,17 @@ export interface Course {
     description : string;
     modules : Module[]
 }
+
+export interface Info {
+    [key: string]: any; 
+}
+
+export interface State {
+    info: Info;
+    allInfo: Info[]; 
+}
+
+export interface Action {
+    type: string;
+    payload: any
+}

@@ -1,43 +1,12 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import axios from 'axios';
-import { Course } from '../Interfaces/interface';
+import { configureStore } from '@reduxjs/toolkit'
+import rootReducer from "../Reducer/reducerIndex"
 
+const store = configureStore({
+    reducer: rootReducer
+})
 
-const CoursesContext = createContext<Course[] | undefined>(undefined);
+export type RootState = ReturnType<typeof rootReducer>;
 
-export const useCourses = () => {
-    const context = useContext(CoursesContext);
-    if (!context) {
-        throw new Error("useCourses debe ser usado dentro de un CoursesProvider");
-    }
-    return context;
-};
+export type AppDispatch = typeof store.dispatch;
 
-interface CoursesProviderProps {
-    children: React.ReactNode;
-}
-
-export const CoursesProvider: React.FC<CoursesProviderProps> = ({ children }) => {
-
-    const [courses, setCourses] = useState<Course[]>([]);
-
-    const getCourses = async () => {
-        try {
-            const response = await axios.get('/data.json');
-            setCourses(response.data);
-            console.log(response.data)
-        } catch (error) {
-            console.error("Error al obtener los cursos:", error);
-        }
-    };
-
-    useEffect(() => {
-        getCourses();
-    }, []);
-
-    return (
-        <CoursesContext.Provider value={courses}>
-            {children}
-        </CoursesContext.Provider>
-    );
-};
+export default store;
