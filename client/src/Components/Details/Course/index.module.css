@@ -8,7 +8,7 @@
     justify-content: center;
     margin-bottom: 2em;
     padding: 1em;
-    background-color: #f7f1c8;
+    background-color: #d1ceaa;
     box-sizing: border-box; 
     box-shadow: 0 4px 6px rgba(121, 133, 73, 0.443); 
 
@@ -55,7 +55,7 @@
 }
 
 .containerLinks {
-    background-color: #f7f1c8;
+    background-color: #d1ceaa;
     box-sizing: border-box; 
     box-shadow:  0 4px 10px rgba(121, 134, 69, 0.5);
     border-radius: 5px;

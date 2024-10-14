@@ -1,12 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-const Paginated: React.FC = () =>  {
-
-    return (
-        <div>
-            soy paginado
-        </div>
-    );
+interface PaginatedProps {
+    coursesPerPage: number; 
+    data: number;     
+    paginado: (pageNum: number) => void; 
 }
+
+const Paginated: React.FC<PaginatedProps> = ({coursesPerPage, data, paginado}) =>  {
+        const pageNum = []
+        for (let i = 1; i <= Math.ceil(data/coursesPerPage); i++) { //divide todos los paises por cantidad de paises que quiero en cada pag
+            pageNum.push(i)
+        }
+    
+        return (
+            <nav >
+            </nav>
+        )
+    }
+    
 
 export default Paginated;
